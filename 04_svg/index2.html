@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+    .body {
+      fill: #aaa;
+    }
+
+    .ear {
+      fill: #999;
+      transform-origin: center;
+      animation: ear-wiggle 2s infinite alternate;
+    }
+
+    .tail {
+      fill: #aaa;
+      transform-origin: left center;
+      animation: tail-swing 1s infinite alternate;
+    }
+
+    .eye {
+      fill: white;
+    }
+
+    .pupil {
+      fill: black;
+    }
+
+    .whisker {
+      stroke: black;
+      stroke-width: 1.5;
+    }
+
+    .nose {
+      fill: pink;
+    }
+
+    .mouth {
+      stroke: black;
+      stroke-width: 1.5;
+      fill: none;
+    }
+
+    @keyframes ear-wiggle {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(5deg); }
+    }
+
+    @keyframes tail-swing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(10deg); }
+    }
+  </style>
+</head>
+<body>
+    
+</body>
+</html><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+
+
+  <!-- 몸통 (조금 더 날씬하게) -->
+  <ellipse class="body" cx="100" cy="125" rx="35" ry="45" />
+
+  <!-- 얼굴 -->
+  <circle class="body" cx="100" cy="80" r="25" />
+
+  <!-- 귀 -->
+  <polygon class="ear" points="78,60 85,35 92,60" />
+  <polygon class="ear" points="108,60 115,35 122,60" />
+
+  <!-- 눈 -->
+  <circle class="eye" cx="90" cy="80" r="5" />
+  <circle class="pupil" cx="90" cy="80" r="2" />
+  <circle class="eye" cx="110" cy="80" r="5" />
+  <circle class="pupil" cx="110" cy="80" r="2" />
+
+  <!-- 코 -->
+  <polygon class="nose" points="97,90 103,90 100,95" />
+
+  <!-- 입 -->
+  <path class="mouth" d="M100,95 Q98,100 95,102" />
+  <path class="mouth" d="M100,95 Q102,100 105,102" />
+
+  <!-- 수염 -->
+  <line class="whisker" x1="75" y1="90" x2="55" y2="85" />
+  <line class="whisker" x1="75" y1="95" x2="55" y2="95" />
+  <line class="whisker" x1="75" y1="100" x2="55" y2="105" />
+
+  <line class="whisker" x1="125" y1="90" x2="145" y2="85" />
+  <line class="whisker" x1="125" y1="95" x2="145" y2="95" />
+  <line class="whisker" x1="125" y1="100" x2="145" y2="105" />
+
+  <!-- 꼬리 -->
+  <ellipse class="tail" cx="140" cy="130" rx="8" ry="25" />
+</svg>
