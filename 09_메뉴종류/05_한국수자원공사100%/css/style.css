@@ -1,0 +1,93 @@
+#wrap{}
+#header{
+    width: 100%;
+    height: 105px;
+    background: rgba(255, 255, 255, .6);
+    position: fixed; top: 0; left: 0;
+}
+.header-inner{display: flex;
+    width: 1400px;
+    /* background: yellow; */
+    margin: 0 auto;
+    justify-content: space-between;
+    height: inherit;
+    align-items: center;
+}
+.header-inner nav>ul{display: flex;}
+.header-inner nav>ul>li{
+    width: 150px; text-align: center;
+}
+.header-inner nav>ul>li>a{
+    font-size: 20px; font-weight: bold;
+    text-decoration: none; 
+    /* background: #b8b7bd; */
+    padding: 38px 20px;
+} 
+
+
+.header-inner nav>ul>li:nth-child(1)>a{color: #ac0000;}
+.header-inner nav>ul>li:nth-child(2)>a{color: #ff7403;}
+.header-inner nav>ul>li:nth-child(3)>a{color: #0076ac;}
+.header-inner nav>ul>li:nth-child(4)>a{color: #00ac34;}
+.header-inner nav>ul>li:nth-child(5)>a{color: #8f00ac;}
+
+.header-inner nav .bg{
+    width: 100%; height: 0; position: absolute;
+    background: #0b8dda; top: 105px; left: 0;
+    transition: .5s;
+}
+
+.header-inner nav>ul>li>ul li{
+    height: 30px; line-height: 30px;
+}
+
+.header-inner nav:hover .bg{
+    height: 200px;   
+}
+.header-inner nav>ul>li>ul{
+    position: absolute; top: 105px;
+    width: 150px; height: 0; overflow: hidden;
+    transition: height .5s;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.header-inner nav:hover>ul>li>ul{
+    height: 200px; 
+}
+
+.header-inner nav>ul>li>ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0;
+
+}
+
+.header-inner nav:hover>ul>li>ul li a{
+    font-size: 16px;
+}
+
+.header-inner nav:hover>ul>li:hover>ul{
+    background: rgba(255, 255, 255, .6);
+}
+
+
+.header-inner .searchbox{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px; display: flex;
+    align-items: center;
+    background: #66a8ff 
+    url(../image/totalsearch_ico.png) no-repeat right 15px center;
+}
+.header-inner .searchbox input{
+    border: none; border-radius: 25px;
+    background: transparent;
+    width: 70%;
+    padding: 15px;
+    color: #fff;
+}
+.header-inner .searchbox input:focus{outline: none;}
+main{width: 100%; height: 700px; 
+    background: url(https://cdn.pixabay.com/photo/2025/01/12/15/00/sea-turtle-9328500_1280.jpg)
+    no-repeat center center/cover;}
