@@ -1,0 +1,423 @@
+*{margin: 0;padding: 0;}
+li{list-style: none; color:#000}
+a{text-decoration: none;}
+img{width: 100%;}
+.h3{
+    color: #fff;
+    font-size:1.01em;
+    font-weight: bold;
+}
+.h1{
+    color: #fff;
+    font-size: 3em;
+
+}
+.category{
+    color: #fff;
+    font-size: .75em;
+}
+.container{
+    width: 1536px;
+    height: inherit;
+    background: rgba(0, 0, 0, .3);
+    margin: 0 auto;
+}
+
+#wrap{width: 100%;}
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+header .container h1{
+    width: 56px;
+    height: 56px;
+}
+header .container h1 img{width: 100%}
+header .container .searchWrap{
+    height: 52px;
+    background: #fff;
+    padding: 6px 6px 6px 19px;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+header .container .searchWrap ul{
+    display: flex;
+    align-items: center;
+/*     height: 52px; */
+    margin-top: 5px;
+}
+header .container .searchWrap ul li:first-child a{padding-left: 26px; }
+header .container .searchWrap ul li:last-child a{
+    display: inline-block;
+    padding: 5px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+header .container .searchWrap ul li:first-child a::before{
+    width: 16px;
+    height: 16px;
+    content:"";
+    background: url(../img/search.svg) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 3px;
+ }
+header .container .searchWrap ul li a{
+    display: block;
+    padding: 0 10px;
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    top: -2px
+}
+header .container .searchWrap ul li a.leftLine:after{
+   position: absolute;
+   content:"";
+   width: 1px;
+   height: 10px;
+   background: #ccc; 
+   top: 10px;
+   right: 0;
+}
+header .container nav{
+    display: flex;
+}
+header .container nav ul{display: flex;}
+header .container nav ul>li{}
+header .container nav ul>li>a{ color: #fff;
+    padding: 0 20px;
+}
+header .container nav ul>li>a svg{fill:#fff}
+header .container nav button{
+    background: none;
+    padding: 0;
+    border: none;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.mainBanner{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+.video-container{}
+.video-wrapper{
+    width:100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    z-index: -1;
+}
+.mainBanner .container{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mainBanner .container h2{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.slideIconimg{
+    width: 100%;
+    height: 58px;
+    padding-top:20px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.mySwiper1{
+    width: 90%;
+    margin: 0 auto;
+}
+.swiper-slide{}
+.swiper-button-next1{
+    position: absolute;
+    top:40%;
+    left: 2%;
+    width: 20px;
+    opacity: .5;
+    
+}
+.swiper-button-prev1{
+    position: absolute;
+    top:40%;
+    right: 2%;
+    width: 20px;
+     opacity: .5;
+}
+.swiper-slide>a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
+    position: relative;
+    transition: .5s;
+}
+
+.swiper-slide:not(:last-child)>a:after{
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 50px;
+    background: #ddd;
+
+}
+.swiper-slide>a>svg{
+    margin: 0 auto 10px auto;
+}
+.swiper-slide>a:hover{
+    opacity: .5;
+}
+.swiper-slide>a>span{
+    font-size: 12px;
+}
+section{margin-bottom: 50px;}
+.section1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section1-left{
+    width: 768px;
+    height: 714px;
+    overflow: hidden;
+}
+.section1-left>ul{width: 100%; height: 100%; position: relative;}
+.section1-left>ul>li{width: 100%; height: 100%;
+    position: absolute;
+    display: none;
+}
+.section1-left>ul>li:first-child{
+    display: block
+}
+.section1-left>ul>li>a{position: relative; width: 100%; height: 100%}
+.section1-left>ul>li>a>img{
+    position: absolute; 
+    z-index: 1; 
+    width: 768px;
+    height: 714px;
+    left: 0;
+    top: 0;
+}
+.section1-left>ul>li>a>.h3{
+    position: absolute;
+    top: 50px;
+    left:50px;
+    z-index: 2;
+    width: 300px;
+} 
+.section1-left>ul>li>a>.h1{
+    position: absolute;
+    width: 550px;
+    top: 80px;
+    left:50px;
+    z-index: 2;
+}
+.section1-left>ul>li>a>.category{
+    position: absolute;
+    width: 300px;
+    top: 150px;
+    left:50px;
+    z-index: 2;
+}
+
+.section1-right{
+    width: 768px;
+    height: 714px;
+    background: rgb(239, 239, 239);
+    padding: 50px;
+    box-sizing: border-box;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section1-right-tabBox{height: 48px;}
+.section1-right-tabBox>ul{
+    display: flex;
+}
+.section1-right-tabBox>ul li{margin-right: 50px;}
+.section1-right-tabBox>ul li.active{
+    border-bottom: 1px solid #000;
+}
+.section1-right-tabBox>ul p{color: #000}
+.section1-right-imgBox{height: 358px; position: relative;}
+.section1-right-imgBox>div{
+    position: absolute;
+    display: none;
+}
+.section1-right-imgBox>.img1{
+    display: block;
+}
+.section1-right-txtBox{
+    display: flex;
+    justify-content: space-between;
+}
+.textWrap{position: relative; width: 80%}
+.textWrap>p{position: absolute; display: none;}
+.textWrap>.text1{display: block;}
+.btn{
+    border: 1px solid #000;
+    padding: 12px 20px;
+    border-radius: 40px;
+    color: #000;
+    font-size: 14px;
+}
+.section2{
+     width: 100%;
+    display: flex;
+    background: rgb(182, 170, 238);
+    justify-content: center;
+}
+.section2-left{
+    width: 768px;
+    height: 742px;
+    background: purple;
+}
+.section2-right{
+    width: 768px;
+    height: 742px;
+    background: rgb(255, 11, 202);
+}
+.section2-row1{padding: 0 0 25px 50px; 
+    display: flex; justify-content: space-between;}
+.section2-row2{padding: 25px 0 0 50px; 
+    display: flex; justify-content: space-between;}
+.section2-imgbox{
+    width: 329px;
+    height: 344px;
+    background: skyblue;
+}
+.section2-txtbox{
+    width: 329px;
+    height: 344px;
+    background: rgb(235, 135, 197);
+}
+.section3{
+    width: 100%;
+    height: 853px;
+    display: flex;
+}
+.section3-left{
+    width: 50%;
+    height: inherit;
+    background: #ddd;
+}
+.section3-right{
+    width: 50%;
+    height: inherit;
+    background: #8f6980;
+}
+.section3-left-box{
+    margin-left: 96px;
+    padding: 50px 50px 50px 96px;
+    box-sizing: border-box;
+    width: 856px;
+    height: 853px;
+    background: yellow;
+}
+.section4{
+    margin: 0 88.5px 50px;
+    padding: 0 96px;
+    height: 660px;
+    background: red;
+    display: flex;
+}
+.section4-imgBox{
+    width: 1182px;
+    height: 660px;
+    background: #000;
+}
+.section4-txtBox{
+    width: 354px;
+    height: 660px;
+    background: #ddd;
+}
+.section4-txtBox .textBox{
+    width: 100%;
+    height: 163px;
+    padding: 24px 30px;
+    box-sizing: border-box;
+    background: orange;
+}
+.section4-txtBox .textBox:not(:last-child){
+    margin-bottom: 2px;
+}
+.section5{
+    margin: 0 110px 50px;
+    display: flex;
+    height: 494px;
+    padding: 0 96px;
+    background: yellowgreen;
+    justify-content: space-between;
+}
+.section5-text{
+    width: 472px;
+    height: 402px;
+    background: blue;
+}
+.section5-img{
+    width: 1004px;
+    height: inherit;
+    background: plum;
+}
+.section6{
+    width: 100%;
+    height: 645px;
+    background: yellow;
+    margin-bottom: 50px;
+}
+.section7{
+    width: 100%;
+    height: 384px;
+    background: #ddd;
+}
+footer{
+    width: 100%;
+    height: 175px;}
+footer .container{
+        border-top: 1px solid #666;
+}
+
+@media screen and (max-width: 1536px) {
+    .container{
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+   header .container .searchWrap{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header .container .searchWrap a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1000px) {
+   header .container .searchWrap{
+       display: none;
+    }
+}
