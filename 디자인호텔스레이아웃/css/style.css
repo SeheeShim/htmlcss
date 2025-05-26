@@ -243,27 +243,27 @@ section{margin-bottom: 50px;}
     flex-direction: column;
     justify-content: space-between;
 }
-.section1-rignt-tabBox{
+.section1-right-tabBox{
     height: 48px;
 }
-.section1-rignt-tabBox>ul{
+.section1-right-tabBox>ul{
     display: flex;
 }
-.section1-rignt-tabBox>ul li{margin-right: 50px;}
-.section1-rignt-tabBox>ul li.active{
+.section1-right-tabBox>ul li{margin-right: 50px;}
+.section1-right-tabBox>ul li.active{
     border-bottom: 1px solid #000;
 }
-.section1-rignt-tabBox>ul p{color: #000;}
-.section1-rignt-tabBox>ul {}
+.section1-right-tabBox>ul p{color: #000;}
+.section1-right-tabBox>ul {}
 
-.section1-rignt-imgBox{height: 358px;
+.section1-right-imgBox{height: 358px;
     position: relative;}
 
-.section1-rignt-imgBox>div{position: absolute;
+.section1-right-imgBox>div{position: absolute;
     display: none;}
-.section1-rignt-imgBox>.img1{display: block;}
+.section1-right-imgBox>.img1{display: block;}
 
-.section1-rignt-txtBox{
+.section1-right-txtBox{
     display: flex;
     justify-content: space-between;
 }
