@@ -392,7 +392,7 @@
               </ul>
             </div>
             <div class="section1-right">
-              <div class="section1-right-tabBox">
+              <div class="section1-right-tabBox section-tabBox">
                 <ul>
                   <li class="active">
                     <a href="javascript:">
@@ -430,23 +430,111 @@
             </div>
         </section>
         <section class="section2">
-            <div class="section2-left"></div>
+            <div class="section2-left">
+              <div class="section2-leftTop-text">
+                <div class="h3">Design Hotels picks</div>
+                <div class="h1">Genji Kyoto</div>
+              </div>
+              <div class="section2-leftBot-text">
+                <div class="h1">Kyoto, Japan</div>
+                <div class="h3">Gardens, courtyards, and a beautiful river in the heart of the city?
+                    This is the Kyoto you've been waiting for.</div>
+                <div class="btn">Book Now</div>
+              </div>
+            </div>
             <div class="section2-right">
                 <div class="section2-row1">
                     <div class="section2-imgbox"></div>
-                    <div class="section2-textbox"></div>
+                    <div class="section2-textbox">
+                      <div class="category">Great City Stays</div>
+                      <div class="h1">Now up to 30% off</div>
+                    </div>
                 </div>
                 <div class="section2-row2">
                     <div class="section2-imgbox"></div>
-                    <div class="section2-textbox"></div>
+                    <div class="section2-textbox">
+                      <div class="category">Art & Culture</div>
+                      <div class="h1">Stay Where <br> Creativity Thrives</div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section3">
             <div class="section3-left">
-                <div class="section3-left-box"></div>
+                <div class="section3-left-box section-tabBox">
+                  <h2 class="h1">Journal</h2>
+                  <div class="tab">
+                    <ul>
+                      <li class="active"><a href="#">Stories</a></li>
+                      <li><a href="#">People</a></li>
+                      <li><a href="#">Trends</a></li>
+                    </ul>
+                  </div>
+                  <div class="contentBox">
+                    <div class="contentText">
+                      <div>
+                        <div class="contentTextLeft">
+                          <img src="./img/culture-journal-box-stamna-sifnos.webp" alt="">
+                          <h4>Destinations</h4>
+                          <h3>Handcrafted & Timeless</h3>
+                          <p>Crete’s Stamna Sifnos presents a new type of sanctuary, one where the architecture blends effortlessly into the landscape.</p>
+                        </div>
+                        <div class="contentTextRight">
+                          <img src="./img/culture-journal-box-olivia-lopez.webp" alt="">
+                          <h4>Design</h4>
+                          <h3>Sustainability, Art, & Design</h3>
+                          <p>Olivia Lopez, the Los Angeles–based founder of Bon Weekender, dishes on the power of the creative recharge.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contentText">
+                      <div>
+                        <div class="contentTextLeft">
+                          <img src="./img/culture-journal-box-mansour-brothers.webp" alt="">
+                          <h4>Originals</h4>
+                          <h3>Hometown Heroes</h3>
+                          <p>With the Granger Hotel Gaslamp Quarter, Alvin and Kevin Mansour have created a living love letter to their beloved San Diego.</p>
+                        </div>
+                        <div class="contentTextRight">
+                          <img src="./img/culture-journal-box-sbokou-sisters.webp" alt="">
+                          <h4>Originals</h4>
+                          <h3>Recreating Crete</h3>
+                          <p>Fearless sisters Agapi and Costantza Sbokou give “authenticity” new meaning at Phāea Cretan Malia.</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="contentText">
+                    <div>
+                        <div class="contentTextLeft">
+                          <img src="./img/ff25-dh-promo-box-images.webp" alt="">
+                          <h4>Further</h4>
+                          <h3>Further Forecast 2025 is Here!</h3>
+                          <p>See how your desire to form deeper connections has given rise to micro-communities that are reshaping travel.</p>
+                        </div>
+                        <div class="contentTextRight">
+                          <img src="./img/jo-further-community.webp" alt="">
+                          <h4>Further</h4>
+                          <h3>Why Community Matters</h3>
+                          <p>A desire for a deeper sense of community is shaping the future of travel.</p>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
             </div>
-            <div class="section3-right"></div>
+            <div class="section3-right">
+              <ul class="item-contents">
+                <li>
+                 <img src="./img/culture-journal-box-stories-kv.webp" alt=""> 
+                </li>                
+                <li>
+                 <img src="./img/culture-journal-box-people-kv.webp" alt="">  
+                </li>
+                <li>
+                 <video src="./img/e44507ea-5a2885fd.mp4" autoplay muted width="100%"></video> 
+                </li>
+              </ul>              
+            </div>
         </section>
         <section class="section4">
             <div class="section4-imgBox"></div>
@@ -470,7 +558,7 @@
 
     <script>
         var swiper = new Swiper(".mySwiper1", {
-        slidesPerView: 11,
+        slidesPerView: 4,
         spaceBetween: 10,
         loop:true,
         /* autoplay: {delay: 5000,}, */
@@ -479,6 +567,25 @@
         prevEl: ".swiper-button-prev1", */
         nextEl: ".swiper-button-prev1",
         prevEl: ".swiper-button-next1",
+        },
+        breakpoints: {
+        
+          768: {
+            slidesPerView: 5,  //브라우저가 768보다 클 때
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 7,  //브라우저가 1024보다 클 때
+            spaceBetween: 20,
+          },
+          1386: {
+            slidesPerView: 10,  //브라우저가 1024보다 클 때
+            spaceBetween: 20,
+          },
+          1600: {
+            slidesPerView: 11,  //브라우저가 1024보다 클 때
+            spaceBetween: 20,
+          },
         },
         });
     </script>
